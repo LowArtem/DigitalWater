@@ -1,4 +1,5 @@
 using System.Reflection;
+using DigitalWater.Api.Configurations.Mongo;
 using Serilog;
 
 namespace DigitalWater.Api;
@@ -50,6 +51,7 @@ public class Program
                 configuration.AddJsonFile(
                     $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
                     optional: true);
+                configuration.AddJsonFile("initData.json", optional: true, reloadOnChange: true);
             })
             .UseSerilog((ctx, lc) => lc
                 .WriteTo.Console()

@@ -1,3 +1,4 @@
+using DigitalWater.Core.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace DigitalWater.Data;
@@ -17,6 +18,7 @@ public class ApplicationContext : DbContext
     {
     }
     
+    public DbSet<Sensor> Sensors { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

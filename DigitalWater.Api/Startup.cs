@@ -1,6 +1,8 @@
 using DigitalWater.Api.Extensions.Application;
 using DigitalWater.Api.Mappers;
 using AutoMapper;
+using DigitalWater.Api.Configurations.Mongo;
+using DigitalWater.Core.Model;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Prometheus;
 using Serilog;
@@ -27,15 +29,22 @@ public class Startup
 
         var mapper = mapperConfig.CreateMapper();
         services.AddSingleton(mapper);
+        
+        services.Configure<List<Sensor>>(Configuration.GetSection("Sensors"));
+        services.AddSingleton<DataSeeder>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app,
         IApiVersionDescriptionProvider provider,
         IWebHostEnvironment env,
-        ILogger<Startup> logger)
+        ILogger<Startup> logger,
+        IHost host)
     {
         // app.MigrateDatabase(logger);
+        
+        var dataSeeder = app.ApplicationServices.GetRequiredService<DataSeeder>();
+        dataSeeder.SeedDatabase(host);
 
         app.UseBaseServices(env, provider);
 

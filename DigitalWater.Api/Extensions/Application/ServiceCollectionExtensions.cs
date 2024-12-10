@@ -55,7 +55,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddDbContext<ApplicationContext>(options =>
         {
-            options.UseMongoDB(connectionString, "digital_water");
+            options.UseMongoDB("mongodb://localhost:27017/?directConnection=true", "sensors_data");
         });
     }
 

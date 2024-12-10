@@ -1,4 +1,5 @@
 using System.Reflection;
+using DigitalWater.Api.Configurations.Mongo;
 using DigitalWater.Api.Middlewares;
 using DigitalWater.Data;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
@@ -34,7 +35,7 @@ public static class ApplicationBuilderExtensions
 
         app.UseRouting();
 
-        app.UseJwtAuthentication();
+        // app.UseJwtAuthentication();
 
         #region Middleware
 
@@ -57,30 +58,6 @@ public static class ApplicationBuilderExtensions
                 name: "default",
                 pattern: "{controller:slugify}/{action:slugify}/{id?}");
         });
-    }
-
-    /// <summary>
-    /// Применение миграций БД
-    /// </summary>
-    /// <param name="app"></param>
-    public static void MigrateDatabase(this IApplicationBuilder app,
-        ILogger logger)
-    {
-        logger.LogInformation("Начало миграций");
-
-        try
-        {
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>()!.CreateScope())
-            {
-                serviceScope.ServiceProvider.GetRequiredService<ApplicationContext>().Database.Migrate();
-            }
-
-            logger.LogInformation("Миграции успешно завершены");
-        }
-        catch (Exception ex)
-        {
-            logger.LogError($"Во время миграций произошла ошибка: {ex}");
-        }
     }
 
     /// <summary>

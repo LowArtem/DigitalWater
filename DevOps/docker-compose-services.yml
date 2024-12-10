@@ -1,54 +1,62 @@
-version: '3.9'
+version: '3.8'
 services:
-  mongo1:
-    image: mongo:6.0
-    container_name: mongo1
-    command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
-    networks:
-      - app
-    # Можно использовать именованные тома, чтобы избежать проблем с правами
-    volumes:
-      - mongo1_data:/data/db
+  # Primary node
+  mongo-primary:
+    image: mongo:latest
+    container_name: mongo-primary
+    restart: always
     ports:
       - "27017:27017"
-
-  mongo2:
-    image: mongo:6.0
-    container_name: mongo2
-    command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
+    command: ["--replSet", "rs0", "--bind_ip_all"]
     networks:
       - app
-    volumes:
-      - mongo2_data:/data/db
 
-  mongo3:
-    image: mongo:6.0
-    container_name: mongo3
-    command: ["mongod", "--replSet", "rs0", "--bind_ip_all"]
+  # Secondary node 1
+  mongo-secondary1:
+    image: mongo:latest
+    container_name: mongo-secondary1
+    restart: always
+    ports:
+      - "27018:27017"
+    command: ["--replSet", "rs0", "--bind_ip_all"]
     networks:
       - app
-    volumes:
-      - mongo3_data:/data/db
 
-  # Контейнер для инициализации репликасета
-  mongo-setup:
-    image: mongo:6.0
-    container_name: mongo-setup
+  # Secondary node 2
+  mongo-secondary2:
+    image: mongo:latest
+    container_name: mongo-secondary2
+    restart: always
+    ports:
+      - "27019:27017"
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+    networks:
+      - app
+
+  # Initializer
+  mongo-init:
+    image: mongo:latest
+    container_name: mongo-init
     depends_on:
-      - mongo1
-      - mongo2
-      - mongo3
+      - mongo-primary
+      - mongo-secondary1
+      - mongo-secondary2
+    entrypoint: >
+      bash -c "
+      sleep 30 &&
+      mongosh --host mongo-primary:27017 --eval '
+        rs.initiate({
+          _id: \"rs0\",
+          members: [
+            { _id: 0, host: \"mongo-primary:27017\" },
+            { _id: 1, host: \"mongo-secondary1:27017\" },
+            { _id: 2, host: \"mongo-secondary2:27017\" }
+          ]
+        })'
+      "
     networks:
       - app
-    command: sh -c "sleep 10 && \
-      mongo --host mongo1:27017 \
-      --eval 'rs.initiate({_id:\"rs0\", members:[{_id:0, host:\"mongo1:27017\"},{_id:1, host:\"mongo2:27017\"},{_id:2, host:\"mongo3:27017\"}]})'"
 
 networks:
   app:
     driver: bridge
-
-volumes:
-  mongo1_data:
-  mongo2_data:
-  mongo3_data:
