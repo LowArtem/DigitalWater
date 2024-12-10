@@ -70,7 +70,7 @@ public class EfCoreRepository<TEntity, TContext> : IEfCoreRepository<TEntity>
     }
 
     /// <inheritdoc />
-    public virtual void Remove(int id)
+    public virtual void Remove(string id)
     {
         var model = _db.Set<TEntity>()
             .AsNoTracking()
@@ -86,7 +86,7 @@ public class EfCoreRepository<TEntity, TContext> : IEfCoreRepository<TEntity>
     }
 
     /// <inheritdoc />
-    public virtual void RemoveRange(IEnumerable<int> ids)
+    public virtual void RemoveRange(IEnumerable<string> ids)
     {
         if (ids == null || !ids.Any())
             return;
@@ -107,7 +107,7 @@ public class EfCoreRepository<TEntity, TContext> : IEfCoreRepository<TEntity>
     }
 
     /// <inheritdoc />
-    public virtual void DeleteRange(IEnumerable<int> ids)
+    public virtual void DeleteRange(IEnumerable<string> ids)
     {
         if (ids == null || !ids.Any())
             return;
@@ -152,7 +152,7 @@ public class EfCoreRepository<TEntity, TContext> : IEfCoreRepository<TEntity>
     }
 
     /// <inheritdoc />
-    public virtual TEntity? Get(int id)
+    public virtual TEntity? Get(string id)
     {
         return GetListQuery().FirstOrDefault(p => p.Id == id);
     }

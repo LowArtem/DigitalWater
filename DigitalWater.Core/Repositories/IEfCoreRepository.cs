@@ -51,7 +51,7 @@ public interface IEfCoreRepository<TEntity>
     /// Удалить
     /// </summary>
     /// <param name="id">ID удаляемого объекта</param>
-    void Remove(int id);
+    void Remove(string id);
 
     /// <summary>
     /// Удалить несколько
@@ -63,7 +63,7 @@ public interface IEfCoreRepository<TEntity>
     /// Удалить несколько
     /// </summary>
     /// <param name="ids">коллекция идентификаторов удаляемых объектов</param>
-    void RemoveRange(IEnumerable<int> ids);
+    void RemoveRange(IEnumerable<string> ids);
 
     /// <summary>
     /// Удалить безвозвратно
@@ -81,7 +81,7 @@ public interface IEfCoreRepository<TEntity>
     /// Удалить несколько безвозвратно
     /// </summary>
     /// <param name="ids">коллекция идентификаторов удаляемых объектов</param>
-    void DeleteRange(IEnumerable<int> ids);
+    void DeleteRange(IEnumerable<string> ids);
 
     /// <summary>
     /// Получить коллекцию
@@ -126,7 +126,7 @@ public interface IEfCoreRepository<TEntity>
     /// </summary>
     /// <param name="id">ID объекта</param>
     /// <returns>объект</returns>
-    TEntity? Get(int id);
+    TEntity? Get(string id);
 
     /// <summary>
     /// Сохранение изменений

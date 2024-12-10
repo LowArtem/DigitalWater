@@ -5,7 +5,7 @@
 /// </summary>
 public class Alert
 {
-    public string AlertId { get; set; }
+    public string Id { get; set; }
     public DateTime Timestamp { get; set; }
     public string Type { get; set; }
     public string Message { get; set; }
