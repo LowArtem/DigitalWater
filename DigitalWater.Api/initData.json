@@ -6,7 +6,7 @@
         "latitude": 55.755826,
         "longitude": 37.6173,
         "address": "Москва, проспект Мира, д. 20",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -49,7 +49,7 @@
         "latitude": 59.934280,
         "longitude": 30.335099,
         "address": "Санкт-Петербург, Невский проспект, д. 50",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "flow_sensor",
       "readings": [
@@ -79,7 +79,7 @@
         "latitude": 56.326887,
         "longitude": 44.005986,
         "address": "Нижний Новгород, ул. Советская, д. 15",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -122,7 +122,7 @@
         "latitude": 55.008353,
         "longitude": 73.240543,
         "address": "Омск, ул. Ленина, д. 3",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "level_sensor",
       "readings": [
@@ -152,7 +152,7 @@
         "latitude": 55.030199,
         "longitude": 82.920430,
         "address": "Новосибирск, Красный проспект, д. 101",
-        "object_type": "перекачивающая станция"
+        "objectType": "перекачивающая станция"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -187,7 +187,7 @@
         "latitude": 61.524010,
         "longitude": 105.318756,
         "address": "Якутск, ул. Ойунского, д. 7",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -220,7 +220,7 @@
         "latitude": 44.616650,
         "longitude": 33.525367,
         "address": "Севастополь, ул. Большая Морская, д. 10",
-        "object_type": "контрольный колодец"
+        "objectType": "контрольный колодец"
       },
       "type": "flow_sensor",
       "readings": [
@@ -250,7 +250,7 @@
         "latitude": 54.717500,
         "longitude": 55.977000,
         "address": "Уфа, проспект Октября, д. 45",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -280,7 +280,7 @@
         "latitude": 57.152985,
         "longitude": 65.541227,
         "address": "Тюмень, ул. Республики, д. 20",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -318,7 +318,7 @@
         "latitude": 52.603112,
         "longitude": 39.570762,
         "address": "Липецк, ул. Гагарина, д. 5",
-        "object_type": "перекачивающая станция"
+        "objectType": "перекачивающая станция"
       },
       "type": "flow_sensor",
       "readings": [
@@ -348,7 +348,7 @@
         "latitude": 55.7623,
         "longitude": 37.6067,
         "address": "Москва, ул. Тверская, д. 15",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -378,7 +378,7 @@
         "latitude": 58.0105,
         "longitude": 56.2294,
         "address": "Пермь, Комсомольский проспект, д. 40",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -408,7 +408,7 @@
         "latitude": 53.1951,
         "longitude": 50.1069,
         "address": "Самара, ул. Победы, д. 22",
-        "object_type": "контрольный колодец"
+        "objectType": "контрольный колодец"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -438,7 +438,7 @@
         "latitude": 51.7682,
         "longitude": 55.0968,
         "address": "Оренбург, ул. Ленинская, д. 5",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "flow_sensor",
       "readings": [
@@ -476,7 +476,7 @@
         "latitude": 53.5078,
         "longitude": 49.4200,
         "address": "Тольятти, ул. Московская, д. 10",
-        "object_type": "перекачивающая станция"
+        "objectType": "перекачивающая станция"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -506,7 +506,7 @@
         "latitude": 55.7963,
         "longitude": 49.1088,
         "address": "Казань, ул. Баумана, д. 4",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -544,7 +544,7 @@
         "latitude": 44.9521,
         "longitude": 34.1024,
         "address": "Симферополь, проспект Кирова, д. 25",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -582,7 +582,7 @@
         "latitude": 48.7071,
         "longitude": 44.5169,
         "address": "Волгоград, ул. Мира, д. 1",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -612,7 +612,7 @@
         "latitude": 55.7887,
         "longitude": 49.1221,
         "address": "Казань, ул. Пушкина, д. 7",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -642,7 +642,7 @@
         "latitude": 51.5331,
         "longitude": 46.0342,
         "address": "Саратов, ул. Московская, д. 30",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -672,7 +672,7 @@
         "latitude": 55.1600,
         "longitude": 61.4026,
         "address": "Челябинск, ул. Победы, д. 50",
-        "object_type": "перекачивающая станция"
+        "objectType": "перекачивающая станция"
       },
       "type": "flow_sensor",
       "readings": [
@@ -702,7 +702,7 @@
         "latitude": 54.6269,
         "longitude": 39.6916,
         "address": "Рязань, ул. Ленина, д. 12",
-        "object_type": "контрольный колодец"
+        "objectType": "контрольный колодец"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -740,7 +740,7 @@
         "latitude": 53.3478,
         "longitude": 83.7794,
         "address": "Барнаул, пр. Ленина, д. 88",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -770,7 +770,7 @@
         "latitude": 46.4846,
         "longitude": 30.7326,
         "address": "Краснодар, ул. Красная, д. 22",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -800,7 +800,7 @@
         "latitude": 58.6036,
         "longitude": 49.5786,
         "address": "Киров, ул. Воровского, д. 10",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -838,7 +838,7 @@
         "latitude": 56.8526,
         "longitude": 53.2048,
         "address": "Ижевск, ул. Центральная, д. 2",
-        "object_type": "перекачивающая станция"
+        "objectType": "перекачивающая станция"
       },
       "type": "flow_sensor",
       "readings": [
@@ -868,7 +868,7 @@
         "latitude": 59.5667,
         "longitude": 150.8000,
         "address": "Магадан, ул. Портовая, д. 1",
-        "object_type": "контрольный колодец"
+        "objectType": "контрольный колодец"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -906,7 +906,7 @@
         "latitude": 60.9395,
         "longitude": 76.5696,
         "address": "Сургут, ул. Университетская, д. 15",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -936,7 +936,7 @@
         "latitude": 50.5997,
         "longitude": 36.5983,
         "address": "Белгород, ул. Преображенская, д. 8",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -966,7 +966,7 @@
         "latitude": 64.5399,
         "longitude": 40.5151,
         "address": "Архангельск, ул. Воскресенская, д. 3",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -996,7 +996,7 @@
         "latitude": 53.2028,
         "longitude": 34.4149,
         "address": "Брянск, ул. Калинина, д. 10",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "flow_sensor",
       "readings": [
@@ -1026,7 +1026,7 @@
         "latitude": 53.4303,
         "longitude": 58.9803,
         "address": "Магнитогорск, ул. Советская, д. 25",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -1064,7 +1064,7 @@
         "latitude": 56.4977,
         "longitude": 84.9744,
         "address": "Томск, проспект Ленина, д. 45",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -1094,7 +1094,7 @@
         "latitude": 58.3594,
         "longitude": 49.5926,
         "address": "Киров, ул. Спасская, д. 33",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -1124,7 +1124,7 @@
         "latitude": 51.7875,
         "longitude": 36.1914,
         "address": "Курск, ул. Ленина, д. 50",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -1154,7 +1154,7 @@
         "latitude": 51.6592,
         "longitude": 35.6558,
         "address": "Орёл, ул. Московская, д. 8",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -1192,7 +1192,7 @@
         "latitude": 55.034,
         "longitude": 82.906,
         "address": "Новосибирск, ул. Димитрова, д. 20",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -1230,7 +1230,7 @@
         "latitude": 53.756,
         "longitude": 91.4293,
         "address": "Кемерово, пр. Ленина, д. 75",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -1260,7 +1260,7 @@
         "latitude": 55.3948,
         "longitude": 36.7331,
         "address": "Обнинск, ул. Ленина, д. 1",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -1290,7 +1290,7 @@
         "latitude": 54.7414,
         "longitude": 55.9678,
         "address": "Уфа, ул. Ленина, д. 30",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -1320,7 +1320,7 @@
         "latitude": 58.0144,
         "longitude": 56.2502,
         "address": "Пермь, ул. Ленина, д. 5",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -1350,7 +1350,7 @@
         "latitude": 57.7679,
         "longitude": 40.9269,
         "address": "Ярославль, ул. Свободы, д. 17",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -1388,7 +1388,7 @@
         "latitude": 60.0167,
         "longitude": 30.6333,
         "address": "Санкт-Петербург, ул. Типанова, д. 19",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -1426,7 +1426,7 @@
         "latitude": 55.7903,
         "longitude": 49.1347,
         "address": "Казань, ул. Кремлевская, д. 10",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -1456,7 +1456,7 @@
         "latitude": 55.4103,
         "longitude": 37.8238,
         "address": "Домодедово, ул. Жуковского, д. 4",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -1486,7 +1486,7 @@
         "latitude": 51.6608,
         "longitude": 35.6674,
         "address": "Орёл, ул. Гостиная, д. 3",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -1516,7 +1516,7 @@
         "latitude": 58.5328,
         "longitude": 31.2690,
         "address": "Великий Новгород, ул. Новолучанская, д. 12",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -1546,7 +1546,7 @@
         "latitude": 56.1462,
         "longitude": 40.3966,
         "address": "Владимир, ул. Большая Московская, д. 5",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -1576,7 +1576,7 @@
         "latitude": 59.9443,
         "longitude": 30.2831,
         "address": "Санкт-Петербург, ул. Марата, д. 14",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -1614,7 +1614,7 @@
         "latitude": 52.7595,
         "longitude": 32.2299,
         "address": "Брянск, ул. Дуки, д. 4",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -1644,7 +1644,7 @@
         "latitude": 54.0088,
         "longitude": 38.2859,
         "address": "Тула, ул. Советская, д. 20",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -1674,7 +1674,7 @@
         "latitude": 53.222,
         "longitude": 44.997,
         "address": "Пенза, ул. Московская, д. 30",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -1704,7 +1704,7 @@
         "latitude": 51.827,
         "longitude": 107.604,
         "address": "Улан-Удэ, ул. Ленина, д. 12",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -1734,7 +1734,7 @@
         "latitude": 59.2187,
         "longitude": 39.8886,
         "address": "Череповец, пр. Победы, д. 14",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [
@@ -1772,7 +1772,7 @@
         "latitude": 51.2035,
         "longitude": 58.5668,
         "address": "Оренбург, ул. Терешковой, д. 7",
-        "object_type": "регулятор давления"
+        "objectType": "регулятор давления"
       },
       "type": "pressure_sensor",
       "readings": [
@@ -1810,7 +1810,7 @@
         "latitude": 55.3609,
         "longitude": 86.0873,
         "address": "Кемерово, ул. Красная, д. 5",
-        "object_type": "колодец распределения"
+        "objectType": "колодец распределения"
       },
       "type": "conductivity_sensor",
       "readings": [
@@ -1840,7 +1840,7 @@
         "latitude": 63.7869,
         "longitude": 34.3547,
         "address": "Петрозаводск, ул. Правды, д. 9",
-        "object_type": "водомерный узел"
+        "objectType": "водомерный узел"
       },
       "type": "ph_sensor",
       "readings": [
@@ -1870,7 +1870,7 @@
         "latitude": 48.4747,
         "longitude": 135.0599,
         "address": "Хабаровск, ул. Муравьева-Амурского, д. 18",
-        "object_type": "насосная станция"
+        "objectType": "насосная станция"
       },
       "type": "temperature_sensor",
       "readings": [
@@ -1900,7 +1900,7 @@
         "latitude": 45.0448,
         "longitude": 39.0000,
         "address": "Краснодар, ул. Северная, д. 8",
-        "object_type": "распределительная камера"
+        "objectType": "распределительная камера"
       },
       "type": "chlorine_sensor",
       "readings": [
@@ -1930,7 +1930,7 @@
         "latitude": 43.1165,
         "longitude": 131.9008,
         "address": "Владивосток, ул. Светланская, д. 30",
-        "object_type": "водоочистная станция"
+        "objectType": "водоочистная станция"
       },
       "type": "turbidity_sensor",
       "readings": [

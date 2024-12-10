@@ -11,11 +11,11 @@ public class Sensor : BaseEntity
 
     public string Type { get; set; }
 
-    public List<Reading> Readings { get; set; }
+    public List<Reading> Readings { get; set; } = [];
 
     public string Status { get; set; }
-    
-    public List<Alert> Alerts { get; set; }
+
+    public List<Alert> Alerts { get; set; } = [];
 
     public Metadata Metadata { get; set; }
 }
