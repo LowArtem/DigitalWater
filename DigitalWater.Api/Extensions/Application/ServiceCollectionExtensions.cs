@@ -55,7 +55,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddDbContext<ApplicationContext>(options =>
         {
-            options.UseMongoDB("mongodb://localhost:27017/?directConnection=true", "sensors_data");
+            options.UseMongoDB(connectionString, "sensors_data");
         });
     }
 
