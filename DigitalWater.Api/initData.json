@@ -1,5 +1,1958 @@
 {
   "Sensors": [
-    
+    {
+      "id": "sensor_001",
+      "location": {
+        "latitude": 55.755826,
+        "longitude": 37.6173,
+        "address": "Москва, проспект Мира, д. 20",
+        "object_type": "насосная станция"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 3.4,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 3.6,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T10:00:00Z",
+          "value": 3.5,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_001",
+          "timestamp": "2024-12-01T10:30:00Z",
+          "type": "low_pressure",
+          "message": "Давление ниже минимального порога (3.0 bar)",
+          "resolved": true
+        }
+      ],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-3000",
+        "installation_date": "2023-10-10",
+        "warranty_expiration": "2026-10-10"
+      }
+    },
+    {
+      "id": "sensor_002",
+      "location": {
+        "latitude": 59.934280,
+        "longitude": 30.335099,
+        "address": "Санкт-Петербург, Невский проспект, д. 50",
+        "object_type": "водоочистная станция"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 120.4,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 119.9,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-200",
+        "installation_date": "2022-04-14",
+        "warranty_expiration": "2025-04-14"
+      }
+    },
+    {
+      "id": "sensor_003",
+      "location": {
+        "latitude": 56.326887,
+        "longitude": 44.005986,
+        "address": "Нижний Новгород, ул. Советская, д. 15",
+        "object_type": "распределительная камера"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:45:00Z",
+          "value": 2.9,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:45:00Z",
+          "value": 2.8,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:45:00Z",
+          "value": 3.0,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_002",
+          "timestamp": "2024-11-30T11:00:00Z",
+          "type": "low_pressure",
+          "message": "Давление ниже рекомендованного уровня (2.5 bar)",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "HydroMaster",
+        "model": "HM-100",
+        "installation_date": "2023-01-25",
+        "warranty_expiration": "2026-01-25"
+      }
+    },
+    {
+      "id": "sensor_004",
+      "location": {
+        "latitude": 55.008353,
+        "longitude": 73.240543,
+        "address": "Омск, ул. Ленина, д. 3",
+        "object_type": "насосная станция"
+      },
+      "type": "level_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:30:00Z",
+          "value": 1.2,
+          "unit": "m"
+        },
+        {
+          "timestamp": "2024-12-10T09:30:00Z",
+          "value": 1.1,
+          "unit": "m"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "LevelLine",
+        "model": "LL-500",
+        "installation_date": "2023-05-15",
+        "warranty_expiration": "2026-05-15"
+      }
+    },
+    {
+      "id": "sensor_005",
+      "location": {
+        "latitude": 55.030199,
+        "longitude": 82.920430,
+        "address": "Новосибирск, Красный проспект, д. 101",
+        "object_type": "перекачивающая станция"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:00:00Z",
+          "value": 4.1,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 4.0,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 4.2,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-3000",
+        "installation_date": "2022-11-20",
+        "warranty_expiration": "2025-11-20"
+      }
+    },
+    {
+      "id": "sensor_006",
+      "location": {
+        "latitude": 61.524010,
+        "longitude": 105.318756,
+        "address": "Якутск, ул. Ойунского, д. 7",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T06:00:00Z",
+          "value": 3.3,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_003",
+          "timestamp": "2024-12-05T12:00:00Z",
+          "type": "irregular_signal",
+          "message": "Колебания давления вне нормального диапазона",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-200",
+        "installation_date": "2024-02-01",
+        "warranty_expiration": "2027-02-01"
+      }
+    },
+    {
+      "id": "sensor_007",
+      "location": {
+        "latitude": 44.616650,
+        "longitude": 33.525367,
+        "address": "Севастополь, ул. Большая Морская, д. 10",
+        "object_type": "контрольный колодец"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 95.0,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 94.8,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-100",
+        "installation_date": "2023-02-10",
+        "warranty_expiration": "2026-02-10"
+      }
+    },
+    {
+      "id": "sensor_008",
+      "location": {
+        "latitude": 54.717500,
+        "longitude": 55.977000,
+        "address": "Уфа, проспект Октября, д. 45",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:30:00Z",
+          "value": 1.5,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:30:00Z",
+          "value": 1.7,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-100",
+        "installation_date": "2023-07-01",
+        "warranty_expiration": "2026-07-01"
+      }
+    },
+    {
+      "id": "sensor_009",
+      "location": {
+        "latitude": 57.152985,
+        "longitude": 65.541227,
+        "address": "Тюмень, ул. Республики, д. 20",
+        "object_type": "колодец распределения"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:15:00Z",
+          "value": 2.5,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:15:00Z",
+          "value": 2.4,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_004",
+          "timestamp": "2024-12-09T14:00:00Z",
+          "type": "low_pressure",
+          "message": "Давление ниже минимального порога (2.3 bar)",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-2000",
+        "installation_date": "2023-03-10",
+        "warranty_expiration": "2026-03-10"
+      }
+    },
+    {
+      "id": "sensor_010",
+      "location": {
+        "latitude": 52.603112,
+        "longitude": 39.570762,
+        "address": "Липецк, ул. Гагарина, д. 5",
+        "object_type": "перекачивающая станция"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 130.0,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 129.5,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-300",
+        "installation_date": "2023-09-12",
+        "warranty_expiration": "2026-09-12"
+      }
+    },
+    {
+      "id": "sensor_011",
+      "location": {
+        "latitude": 55.7623,
+        "longitude": 37.6067,
+        "address": "Москва, ул. Тверская, д. 15",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 7.2,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T09:05:00Z",
+          "value": 7.1,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-100",
+        "installation_date": "2023-04-01",
+        "warranty_expiration": "2026-04-01"
+      }
+    },
+    {
+      "id": "sensor_012",
+      "location": {
+        "latitude": 58.0105,
+        "longitude": 56.2294,
+        "address": "Пермь, Комсомольский проспект, д. 40",
+        "object_type": "распределительная камера"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:10:00Z",
+          "value": 5.3,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T09:10:00Z",
+          "value": 5.1,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-200",
+        "installation_date": "2022-12-10",
+        "warranty_expiration": "2025-12-10"
+      }
+    },
+    {
+      "id": "sensor_013",
+      "location": {
+        "latitude": 53.1951,
+        "longitude": 50.1069,
+        "address": "Самара, ул. Победы, д. 22",
+        "object_type": "контрольный колодец"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:50:00Z",
+          "value": 0.8,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T08:50:00Z",
+          "value": 0.9,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-100",
+        "installation_date": "2023-02-20",
+        "warranty_expiration": "2026-02-20"
+      }
+    },
+    {
+      "id": "sensor_014",
+      "location": {
+        "latitude": 51.7682,
+        "longitude": 55.0968,
+        "address": "Оренбург, ул. Ленинская, д. 5",
+        "object_type": "насосная станция"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T06:30:00Z",
+          "value": 110.2,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T07:30:00Z",
+          "value": 110.5,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_005",
+          "timestamp": "2024-12-09T12:00:00Z",
+          "type": "flow_drop",
+          "message": "Падение расхода ниже нормы",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-150",
+        "installation_date": "2023-06-10",
+        "warranty_expiration": "2026-06-10"
+      }
+    },
+    {
+      "id": "sensor_015",
+      "location": {
+        "latitude": 53.5078,
+        "longitude": 49.4200,
+        "address": "Тольятти, ул. Московская, д. 10",
+        "object_type": "перекачивающая станция"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:20:00Z",
+          "value": 3.8,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:20:00Z",
+          "value": 3.7,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-2000",
+        "installation_date": "2023-11-11",
+        "warranty_expiration": "2026-11-11"
+      }
+    },
+    {
+      "id": "sensor_016",
+      "location": {
+        "latitude": 55.7963,
+        "longitude": 49.1088,
+        "address": "Казань, ул. Баумана, д. 4",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:20:00Z",
+          "value": 2.0,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:20:00Z",
+          "value": 2.1,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_006",
+          "timestamp": "2024-12-09T15:00:00Z",
+          "type": "high_turbidity",
+          "message": "Мутность выше нормы",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-200",
+        "installation_date": "2023-01-30",
+        "warranty_expiration": "2026-01-30"
+      }
+    },
+    {
+      "id": "sensor_017",
+      "location": {
+        "latitude": 44.9521,
+        "longitude": 34.1024,
+        "address": "Симферополь, проспект Кирова, д. 25",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:40:00Z",
+          "value": 3.1,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:40:00Z",
+          "value": 3.0,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_007",
+          "timestamp": "2024-12-10T06:00:00Z",
+          "type": "irregular_signal",
+          "message": "Нестабильный сигнал давления",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-300",
+        "installation_date": "2024-03-01",
+        "warranty_expiration": "2027-03-01"
+      }
+    },
+    {
+      "id": "sensor_018",
+      "location": {
+        "latitude": 48.7071,
+        "longitude": 44.5169,
+        "address": "Волгоград, ул. Мира, д. 1",
+        "object_type": "колодец распределения"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:25:00Z",
+          "value": 600,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T09:25:00Z",
+          "value": 610,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-100",
+        "installation_date": "2023-08-05",
+        "warranty_expiration": "2026-08-05"
+      }
+    },
+    {
+      "id": "sensor_019",
+      "location": {
+        "latitude": 55.7887,
+        "longitude": 49.1221,
+        "address": "Казань, ул. Пушкина, д. 7",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:45:00Z",
+          "value": 7.5,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T09:45:00Z",
+          "value": 7.4,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-200",
+        "installation_date": "2023-05-12",
+        "warranty_expiration": "2026-05-12"
+      }
+    },
+    {
+      "id": "sensor_020",
+      "location": {
+        "latitude": 51.5331,
+        "longitude": 46.0342,
+        "address": "Саратов, ул. Московская, д. 30",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:00:00Z",
+          "value": 4.0,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 3.9,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-300",
+        "installation_date": "2022-10-10",
+        "warranty_expiration": "2025-10-10"
+      }
+    },
+    {
+      "id": "sensor_021",
+      "location": {
+        "latitude": 55.1600,
+        "longitude": 61.4026,
+        "address": "Челябинск, ул. Победы, д. 50",
+        "object_type": "перекачивающая станция"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:10:00Z",
+          "value": 140.0,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T09:10:00Z",
+          "value": 139.5,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-400",
+        "installation_date": "2023-04-14",
+        "warranty_expiration": "2026-04-14"
+      }
+    },
+    {
+      "id": "sensor_022",
+      "location": {
+        "latitude": 54.6269,
+        "longitude": 39.6916,
+        "address": "Рязань, ул. Ленина, д. 12",
+        "object_type": "контрольный колодец"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:50:00Z",
+          "value": 3.0,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:50:00Z",
+          "value": 2.9,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_008",
+          "timestamp": "2024-12-09T16:00:00Z",
+          "type": "low_pressure",
+          "message": "Давление ниже допустимого уровня",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-3000",
+        "installation_date": "2023-07-20",
+        "warranty_expiration": "2026-07-20"
+      }
+    },
+    {
+      "id": "sensor_023",
+      "location": {
+        "latitude": 53.3478,
+        "longitude": 83.7794,
+        "address": "Барнаул, пр. Ленина, д. 88",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:30:00Z",
+          "value": 1.0,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T09:30:00Z",
+          "value": 1.1,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-200",
+        "installation_date": "2023-03-15",
+        "warranty_expiration": "2026-03-15"
+      }
+    },
+    {
+      "id": "sensor_024",
+      "location": {
+        "latitude": 46.4846,
+        "longitude": 30.7326,
+        "address": "Краснодар, ул. Красная, д. 22",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:35:00Z",
+          "value": 1.4,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:35:00Z",
+          "value": 1.6,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-300",
+        "installation_date": "2023-09-01",
+        "warranty_expiration": "2026-09-01"
+      }
+    },
+    {
+      "id": "sensor_025",
+      "location": {
+        "latitude": 58.6036,
+        "longitude": 49.5786,
+        "address": "Киров, ул. Воровского, д. 10",
+        "object_type": "насосная станция"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:00:00Z",
+          "value": 650,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T09:00:00Z",
+          "value": 640,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_009",
+          "timestamp": "2024-12-10T06:10:00Z",
+          "type": "conductivity_rise",
+          "message": "Повышенная электропроводность",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-200",
+        "installation_date": "2023-11-25",
+        "warranty_expiration": "2026-11-25"
+      }
+    },
+    {
+      "id": "sensor_026",
+      "location": {
+        "latitude": 56.8526,
+        "longitude": 53.2048,
+        "address": "Ижевск, ул. Центральная, д. 2",
+        "object_type": "перекачивающая станция"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:10:00Z",
+          "value": 125.0,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T09:10:00Z",
+          "value": 124.5,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-250",
+        "installation_date": "2023-08-18",
+        "warranty_expiration": "2026-08-18"
+      }
+    },
+    {
+      "id": "sensor_027",
+      "location": {
+        "latitude": 59.5667,
+        "longitude": 150.8000,
+        "address": "Магадан, ул. Портовая, д. 1",
+        "object_type": "контрольный колодец"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:40:00Z",
+          "value": 2.7,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:40:00Z",
+          "value": 2.6,
+          "unit": "bar"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_010",
+          "timestamp": "2024-12-09T13:00:00Z",
+          "type": "low_pressure",
+          "message": "Давление ниже порога",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "SensorTech Inc.",
+        "model": "ST-2000",
+        "installation_date": "2023-04-25",
+        "warranty_expiration": "2026-04-25"
+      }
+    },
+    {
+      "id": "sensor_028",
+      "location": {
+        "latitude": 60.9395,
+        "longitude": 76.5696,
+        "address": "Сургут, ул. Университетская, д. 15",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:50:00Z",
+          "value": 7.0,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T09:50:00Z",
+          "value": 7.0,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-300",
+        "installation_date": "2023-02-02",
+        "warranty_expiration": "2026-02-02"
+      }
+    },
+    {
+      "id": "sensor_029",
+      "location": {
+        "latitude": 50.5997,
+        "longitude": 36.5983,
+        "address": "Белгород, ул. Преображенская, д. 8",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:15:00Z",
+          "value": 6.2,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:15:00Z",
+          "value": 6.0,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-100",
+        "installation_date": "2022-09-10",
+        "warranty_expiration": "2025-09-10"
+      }
+    },
+    {
+      "id": "sensor_030",
+      "location": {
+        "latitude": 64.5399,
+        "longitude": 40.5151,
+        "address": "Архангельск, ул. Воскресенская, д. 3",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:55:00Z",
+          "value": 0.7,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T09:55:00Z",
+          "value": 0.8,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-150",
+        "installation_date": "2023-12-01",
+        "warranty_expiration": "2026-12-01"
+      }
+    },
+    {
+      "id": "sensor_031",
+      "location": {
+        "latitude": 53.2028,
+        "longitude": 34.4149,
+        "address": "Брянск, ул. Калинина, д. 10",
+        "object_type": "колодец распределения"
+      },
+      "type": "flow_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:55:00Z",
+          "value": 100.0,
+          "unit": "l/min"
+        },
+        {
+          "timestamp": "2024-12-10T08:55:00Z",
+          "value": 99.8,
+          "unit": "l/min"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "AquaFlow Corp.",
+        "model": "AF-100",
+        "installation_date": "2023-10-05",
+        "warranty_expiration": "2026-10-05"
+      }
+    },
+    {
+      "id": "sensor_032",
+      "location": {
+        "latitude": 53.4303,
+        "longitude": 58.9803,
+        "address": "Магнитогорск, ул. Советская, д. 25",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:25:00Z",
+          "value": 3.2,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:25:00Z",
+          "value": 3.1,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_011",
+          "timestamp": "2024-12-10T05:45:00Z",
+          "type": "irregular_signal",
+          "message": "Перепады давления",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-100",
+        "installation_date": "2024-06-01",
+        "warranty_expiration": "2027-06-01"
+      }
+    },
+    {
+      "id": "sensor_033",
+      "location": {
+        "latitude": 56.4977,
+        "longitude": 84.9744,
+        "address": "Томск, проспект Ленина, д. 45",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:05:00Z",
+          "value": 7.3,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 7.4,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-400",
+        "installation_date": "2023-05-05",
+        "warranty_expiration": "2026-05-05"
+      }
+    },
+    {
+      "id": "sensor_034",
+      "location": {
+        "latitude": 58.3594,
+        "longitude": 49.5926,
+        "address": "Киров, ул. Спасская, д. 33",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:10:00Z",
+          "value": 5.7,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:10:00Z",
+          "value": 5.6,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-200",
+        "installation_date": "2022-11-15",
+        "warranty_expiration": "2025-11-15"
+      }
+    },
+    {
+      "id": "sensor_035",
+      "location": {
+        "latitude": 51.7875,
+        "longitude": 36.1914,
+        "address": "Курск, ул. Ленина, д. 50",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:35:00Z",
+          "value": 1.2,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T08:35:00Z",
+          "value": 1.1,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-300",
+        "installation_date": "2023-06-20",
+        "warranty_expiration": "2026-06-20"
+      }
+    },
+    {
+      "id": "sensor_036",
+      "location": {
+        "latitude": 51.6592,
+        "longitude": 35.6558,
+        "address": "Орёл, ул. Московская, д. 8",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 1.9,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T09:05:00Z",
+          "value": 2.0,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_012",
+          "timestamp": "2024-12-10T07:00:00Z",
+          "type": "high_turbidity",
+          "message": "Мутность повышена",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-100",
+        "installation_date": "2023-12-01",
+        "warranty_expiration": "2026-12-01"
+      }
+    },
+    {
+      "id": "sensor_037",
+      "location": {
+        "latitude": 55.034,
+        "longitude": 82.906,
+        "address": "Новосибирск, ул. Димитрова, д. 20",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:15:00Z",
+          "value": 3.4,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:15:00Z",
+          "value": 3.3,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_013",
+          "timestamp": "2024-12-10T06:30:00Z",
+          "type": "irregular_signal",
+          "message": "Неравномерность показаний давления",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-200",
+        "installation_date": "2024-05-10",
+        "warranty_expiration": "2027-05-10"
+      }
+    },
+    {
+      "id": "sensor_038",
+      "location": {
+        "latitude": 53.756,
+        "longitude": 91.4293,
+        "address": "Кемерово, пр. Ленина, д. 75",
+        "object_type": "колодец распределения"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:25:00Z",
+          "value": 700,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T09:25:00Z",
+          "value": 710,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-300",
+        "installation_date": "2023-02-11",
+        "warranty_expiration": "2026-02-11"
+      }
+    },
+    {
+      "id": "sensor_039",
+      "location": {
+        "latitude": 55.3948,
+        "longitude": 36.7331,
+        "address": "Обнинск, ул. Ленина, д. 1",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:40:00Z",
+          "value": 7.6,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T08:40:00Z",
+          "value": 7.5,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-100",
+        "installation_date": "2023-01-15",
+        "warranty_expiration": "2026-01-15"
+      }
+    },
+    {
+      "id": "sensor_040",
+      "location": {
+        "latitude": 54.7414,
+        "longitude": 55.9678,
+        "address": "Уфа, ул. Ленина, д. 30",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:55:00Z",
+          "value": 3.5,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:55:00Z",
+          "value": 3.4,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-300",
+        "installation_date": "2022-08-01",
+        "warranty_expiration": "2025-08-01"
+      }
+    },
+    {
+      "id": "sensor_041",
+      "location": {
+        "latitude": 58.0144,
+        "longitude": 56.2502,
+        "address": "Пермь, ул. Ленина, д. 5",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:25:00Z",
+          "value": 1.0,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T08:25:00Z",
+          "value": 1.1,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-200",
+        "installation_date": "2023-03-03",
+        "warranty_expiration": "2026-03-03"
+      }
+    },
+    {
+      "id": "sensor_042",
+      "location": {
+        "latitude": 57.7679,
+        "longitude": 40.9269,
+        "address": "Ярославль, ул. Свободы, д. 17",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:05:00Z",
+          "value": 2.3,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 2.2,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_014",
+          "timestamp": "2024-12-10T06:00:00Z",
+          "type": "high_turbidity",
+          "message": "Превышение допустимой мутности",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-200",
+        "installation_date": "2023-02-22",
+        "warranty_expiration": "2026-02-22"
+      }
+    },
+    {
+      "id": "sensor_043",
+      "location": {
+        "latitude": 60.0167,
+        "longitude": 30.6333,
+        "address": "Санкт-Петербург, ул. Типанова, д. 19",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:35:00Z",
+          "value": 2.9,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:35:00Z",
+          "value": 2.8,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_015",
+          "timestamp": "2024-12-10T07:10:00Z",
+          "type": "irregular_signal",
+          "message": "Давление нестабильно",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-400",
+        "installation_date": "2024-07-01",
+        "warranty_expiration": "2027-07-01"
+      }
+    },
+    {
+      "id": "sensor_044",
+      "location": {
+        "latitude": 55.7903,
+        "longitude": 49.1347,
+        "address": "Казань, ул. Кремлевская, д. 10",
+        "object_type": "колодец распределения"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:45:00Z",
+          "value": 590,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T09:45:00Z",
+          "value": 595,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-100",
+        "installation_date": "2023-10-10",
+        "warranty_expiration": "2026-10-10"
+      }
+    },
+    {
+      "id": "sensor_045",
+      "location": {
+        "latitude": 55.4103,
+        "longitude": 37.8238,
+        "address": "Домодедово, ул. Жуковского, д. 4",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:45:00Z",
+          "value": 7.2,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T08:45:00Z",
+          "value": 7.3,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-200",
+        "installation_date": "2023-08-20",
+        "warranty_expiration": "2026-08-20"
+      }
+    },
+    {
+      "id": "sensor_046",
+      "location": {
+        "latitude": 51.6608,
+        "longitude": 35.6674,
+        "address": "Орёл, ул. Гостиная, д. 3",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:35:00Z",
+          "value": 4.8,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:35:00Z",
+          "value": 4.7,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-100",
+        "installation_date": "2023-07-30",
+        "warranty_expiration": "2026-07-30"
+      }
+    },
+    {
+      "id": "sensor_047",
+      "location": {
+        "latitude": 58.5328,
+        "longitude": 31.2690,
+        "address": "Великий Новгород, ул. Новолучанская, д. 12",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 0.9,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T09:05:00Z",
+          "value": 1.0,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-100",
+        "installation_date": "2023-10-10",
+        "warranty_expiration": "2026-10-10"
+      }
+    },
+    {
+      "id": "sensor_048",
+      "location": {
+        "latitude": 56.1462,
+        "longitude": 40.3966,
+        "address": "Владимир, ул. Большая Московская, д. 5",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:25:00Z",
+          "value": 1.6,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:25:00Z",
+          "value": 1.5,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-200",
+        "installation_date": "2023-11-20",
+        "warranty_expiration": "2026-11-20"
+      }
+    },
+    {
+      "id": "sensor_049",
+      "location": {
+        "latitude": 59.9443,
+        "longitude": 30.2831,
+        "address": "Санкт-Петербург, ул. Марата, д. 14",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:20:00Z",
+          "value": 3.5,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T09:20:00Z",
+          "value": 3.4,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_016",
+          "timestamp": "2024-12-10T06:45:00Z",
+          "type": "irregular_signal",
+          "message": "Неустойчивый сигнал давления",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-200",
+        "installation_date": "2024-05-25",
+        "warranty_expiration": "2027-05-25"
+      }
+    },
+    {
+      "id": "sensor_050",
+      "location": {
+        "latitude": 52.7595,
+        "longitude": 32.2299,
+        "address": "Брянск, ул. Дуки, д. 4",
+        "object_type": "колодец распределения"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:30:00Z",
+          "value": 580,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T09:30:00Z",
+          "value": 585,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-150",
+        "installation_date": "2023-06-15",
+        "warranty_expiration": "2026-06-15"
+      }
+    },
+    {
+      "id": "sensor_051",
+      "location": {
+        "latitude": 54.0088,
+        "longitude": 38.2859,
+        "address": "Тула, ул. Советская, д. 20",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:30:00Z",
+          "value": 7.1,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T08:30:00Z",
+          "value": 7.0,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-300",
+        "installation_date": "2023-03-20",
+        "warranty_expiration": "2026-03-20"
+      }
+    },
+    {
+      "id": "sensor_052",
+      "location": {
+        "latitude": 53.222,
+        "longitude": 44.997,
+        "address": "Пенза, ул. Московская, д. 30",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:20:00Z",
+          "value": 6.1,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:20:00Z",
+          "value": 6.0,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-300",
+        "installation_date": "2022-12-20",
+        "warranty_expiration": "2025-12-20"
+      }
+    },
+    {
+      "id": "sensor_053",
+      "location": {
+        "latitude": 51.827,
+        "longitude": 107.604,
+        "address": "Улан-Удэ, ул. Ленина, д. 12",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:10:00Z",
+          "value": 0.8,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T09:10:00Z",
+          "value": 0.9,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-200",
+        "installation_date": "2023-05-25",
+        "warranty_expiration": "2026-05-25"
+      }
+    },
+    {
+      "id": "sensor_054",
+      "location": {
+        "latitude": 59.2187,
+        "longitude": 39.8886,
+        "address": "Череповец, пр. Победы, д. 14",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:15:00Z",
+          "value": 2.4,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:15:00Z",
+          "value": 2.5,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [
+        {
+          "id": "alert_017",
+          "timestamp": "2024-12-10T06:20:00Z",
+          "type": "high_turbidity",
+          "message": "Мутность превышена",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-200",
+        "installation_date": "2023-09-25",
+        "warranty_expiration": "2026-09-25"
+      }
+    },
+    {
+      "id": "sensor_055",
+      "location": {
+        "latitude": 51.2035,
+        "longitude": 58.5668,
+        "address": "Оренбург, ул. Терешковой, д. 7",
+        "object_type": "регулятор давления"
+      },
+      "type": "pressure_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:55:00Z",
+          "value": 3.2,
+          "unit": "bar"
+        },
+        {
+          "timestamp": "2024-12-10T08:55:00Z",
+          "value": 3.1,
+          "unit": "bar"
+        }
+      ],
+      "status": "under_maintenance",
+      "alerts": [
+        {
+          "id": "alert_018",
+          "timestamp": "2024-12-10T06:50:00Z",
+          "type": "irregular_signal",
+          "message": "Нестабильные данные давления",
+          "resolved": false
+        }
+      ],
+      "metadata": {
+        "manufacturer": "PressionTech",
+        "model": "PT-300",
+        "installation_date": "2024-01-10",
+        "warranty_expiration": "2027-01-10"
+      }
+    },
+    {
+      "id": "sensor_056",
+      "location": {
+        "latitude": 55.3609,
+        "longitude": 86.0873,
+        "address": "Кемерово, ул. Красная, д. 5",
+        "object_type": "колодец распределения"
+      },
+      "type": "conductivity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:40:00Z",
+          "value": 720,
+          "unit": "µS/cm"
+        },
+        {
+          "timestamp": "2024-12-10T08:40:00Z",
+          "value": 725,
+          "unit": "µS/cm"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ElectroSense",
+        "model": "ES-250",
+        "installation_date": "2023-07-01",
+        "warranty_expiration": "2026-07-01"
+      }
+    },
+    {
+      "id": "sensor_057",
+      "location": {
+        "latitude": 63.7869,
+        "longitude": 34.3547,
+        "address": "Петрозаводск, ул. Правды, д. 9",
+        "object_type": "водомерный узел"
+      },
+      "type": "ph_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:50:00Z",
+          "value": 7.3,
+          "unit": "pH"
+        },
+        {
+          "timestamp": "2024-12-10T08:50:00Z",
+          "value": 7.2,
+          "unit": "pH"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "WaterCheck",
+        "model": "WC-150",
+        "installation_date": "2023-04-15",
+        "warranty_expiration": "2026-04-15"
+      }
+    },
+    {
+      "id": "sensor_058",
+      "location": {
+        "latitude": 48.4747,
+        "longitude": 135.0599,
+        "address": "Хабаровск, ул. Муравьева-Амурского, д. 18",
+        "object_type": "насосная станция"
+      },
+      "type": "temperature_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:05:00Z",
+          "value": 2.9,
+          "unit": "°C"
+        },
+        {
+          "timestamp": "2024-12-10T08:05:00Z",
+          "value": 3.0,
+          "unit": "°C"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ThermaSense",
+        "model": "TS-200",
+        "installation_date": "2022-10-10",
+        "warranty_expiration": "2025-10-10"
+      }
+    },
+    {
+      "id": "sensor_059",
+      "location": {
+        "latitude": 45.0448,
+        "longitude": 39.0000,
+        "address": "Краснодар, ул. Северная, д. 8",
+        "object_type": "распределительная камера"
+      },
+      "type": "chlorine_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T08:50:00Z",
+          "value": 1.3,
+          "unit": "mg/L"
+        },
+        {
+          "timestamp": "2024-12-10T09:50:00Z",
+          "value": 1.2,
+          "unit": "mg/L"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClorTech",
+        "model": "CT-250",
+        "installation_date": "2023-11-05",
+        "warranty_expiration": "2026-11-05"
+      }
+    },
+    {
+      "id": "sensor_060",
+      "location": {
+        "latitude": 43.1165,
+        "longitude": 131.9008,
+        "address": "Владивосток, ул. Светланская, д. 30",
+        "object_type": "водоочистная станция"
+      },
+      "type": "turbidity_sensor",
+      "readings": [
+        {
+          "timestamp": "2024-12-10T07:45:00Z",
+          "value": 2.1,
+          "unit": "NTU"
+        },
+        {
+          "timestamp": "2024-12-10T08:45:00Z",
+          "value": 2.0,
+          "unit": "NTU"
+        }
+      ],
+      "status": "active",
+      "alerts": [],
+      "metadata": {
+        "manufacturer": "ClearWater",
+        "model": "CW-300",
+        "installation_date": "2023-06-10",
+        "warranty_expiration": "2026-06-10"
+      }
+    }
   ]
 }
