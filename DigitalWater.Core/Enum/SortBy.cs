@@ -5,7 +5,7 @@
 /// </summary>
 public enum SortBy
 {
-    Value,
+    Manufacturer,
     AlertsCount,
     SensorId
 }
