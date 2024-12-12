@@ -3,6 +3,7 @@ using DigitalWater.Api.Mappers;
 using AutoMapper;
 using DigitalWater.Api.Configurations.Mongo;
 using DigitalWater.Core.Model;
+using DigitalWater.Data.Services;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Prometheus;
 using Serilog;
@@ -32,6 +33,8 @@ public class Startup
         
         services.Configure<List<Sensor>>(Configuration.GetSection("Sensors"));
         services.AddSingleton<DataSeeder>();
+
+        services.AddTransient<ServiceReceivingService, ServiceReceivingService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,6 +1,8 @@
 ﻿using DigitalWater.Api.Attributes;
+using DigitalWater.Core.Dto;
 using DigitalWater.Core.Model;
 using DigitalWater.Core.Repositories;
+using DigitalWater.Data.Services;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -15,21 +17,33 @@ namespace DigitalWater.Api.Api.ExternalApi.v1;
 public class SensorController : ControllerBase
 {
     private readonly IEfCoreRepository<Sensor> _repository;
+    private readonly ServiceReceivingService _serviceReceivingService;
 
-    public SensorController(IEfCoreRepository<Sensor> repository)
+    public SensorController(IEfCoreRepository<Sensor> repository, ServiceReceivingService serviceReceivingService)
     {
         _repository = repository;
+        _serviceReceivingService = serviceReceivingService;
     }
 
+    /// <summary>
+    /// Получить информацию с датчиков
+    /// </summary>
+    /// <param name="request">параметры запроса</param>
+    /// <returns>информация с датчиков</returns>
     [HttpGet]
     [SwaggerResponse(200, "Получить информацию с датчиков", typeof(List<Sensor>))]
     [SwaggerResponse(400, "Неверный запрос")]
     [SwaggerResponse(500, "Произошла ошибка при получении записей")]
-    public ActionResult<List<Sensor>> GetSensors()
+    public async Task<ActionResult<List<Sensor>>> GetSensors([FromQuery] GetSensorsRequest request)
     {
-        return _repository.GetList();
+        return await _serviceReceivingService.GetSensorsAsync(request);
     }
 
+    /// <summary>
+    /// Добавить запись с информацией с датчика
+    /// </summary>
+    /// <param name="sensor">информация с датчика</param>
+    /// <returns></returns>
     [HttpPost]
     [SwaggerResponse(200, "Добавить информацию о датчике в базу данных")]
     [SwaggerResponse(400, "Неверный запрос")]
@@ -52,6 +66,11 @@ public class SensorController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Удалить запись с информацией с датчика
+    /// </summary>
+    /// <param name="id">id</param>
+    /// <returns></returns>
     [HttpDelete("{id}")]
     [SwaggerResponse(200, "Удалить информацию о датчике из базы данных")]
     [SwaggerResponse(400, "Неверный запрос")]
@@ -69,6 +88,12 @@ public class SensorController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Обновить запись с информацией с датчика
+    /// </summary>
+    /// <param name="id">Id</param>
+    /// <param name="sensor">информация с датчика</param>
+    /// <returns></returns>
     [HttpPut("{id}")]
     [SwaggerResponse(200, "Обновить информацию о датчике в базе данных")]
     [SwaggerResponse(400, "Неверный запрос")]
