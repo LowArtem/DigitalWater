@@ -58,7 +58,7 @@ public class SensorController : ControllerBase
                 return Conflict("Запись с таким id уже существует");
             
             _repository.Add(sensor);
-            return Ok();
+            return Ok(sensor);
         }
         catch (Exception e)
         {
@@ -109,7 +109,7 @@ public class SensorController : ControllerBase
                 return BadRequest("Неверный id записи");
 
             _repository.Update(sensor);
-            return Ok();
+            return Ok(sensor);
         }
         catch (Exception e)
         {
