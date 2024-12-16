@@ -22,7 +22,7 @@ public class ServiceReceivingService
     /// </summary>
     /// <param name="request">параметры запроса</param>
     /// <returns></returns>
-    public async Task<List<Sensor>> GetSensorsAsync(GetSensorsRequest request)
+    public async Task<(List<Sensor>, int)> GetSensorsAsync(GetSensorsRequest request)
     {
         var query = _context.Sensors.AsQueryable();
 
@@ -69,6 +69,8 @@ public class ServiceReceivingService
                 _ => query
             };
         }
+        
+        var totalCount = await query.CountAsync();
 
         // Выполнение запроса и ручная фильтрация Readings
         var sensors = await query
@@ -84,6 +86,6 @@ public class ServiceReceivingService
                 .ToList();
         }
 
-        return sensors;
+        return (sensors, totalCount);
     }
 }

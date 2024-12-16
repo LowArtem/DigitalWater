@@ -26,17 +26,25 @@ public class SensorController : ControllerBase
     }
 
     /// <summary>
+    /// Результат получения информации с датчиков
+    /// </summary>
+    /// <param name="TotalCount">общее количество записей</param>
+    /// <param name="Data">текущая выборка</param>
+    public record GetSensorsResponse(int TotalCount, List<Sensor> Data);
+
+    /// <summary>
     /// Получить информацию с датчиков
     /// </summary>
     /// <param name="request">параметры запроса</param>
     /// <returns>информация с датчиков</returns>
     [HttpGet]
-    [SwaggerResponse(200, "Получить информацию с датчиков", typeof(List<Sensor>))]
+    [SwaggerResponse(200, "Получить информацию с датчиков", typeof(GetSensorsResponse))]
     [SwaggerResponse(400, "Неверный запрос")]
     [SwaggerResponse(500, "Произошла ошибка при получении записей")]
-    public async Task<ActionResult<List<Sensor>>> GetSensors([FromQuery] GetSensorsRequest request)
+    public async Task<ActionResult<GetSensorsResponse>> GetSensors([FromQuery] GetSensorsRequest request)
     {
-        return await _serviceReceivingService.GetSensorsAsync(request);
+        var data = await _serviceReceivingService.GetSensorsAsync(request);
+        return Ok(new GetSensorsResponse(data.Item2, data.Item1));
     }
 
     /// <summary>
