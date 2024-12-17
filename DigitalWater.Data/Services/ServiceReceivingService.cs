@@ -41,7 +41,7 @@ public class ServiceReceivingService
         // Фильтрация по идентификатору датчика
         if (!string.IsNullOrEmpty(request.SensorId))
         {
-            query = query.Where(sensor => sensor.Id.ToString() == request.SensorId);
+            query = query.Where(sensor => sensor.Id.Contains(request.SensorId));
         }
 
         // Предварительная фильтрация по наличию Readings в диапазоне

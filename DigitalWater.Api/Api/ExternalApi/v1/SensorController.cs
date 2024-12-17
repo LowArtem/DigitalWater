@@ -4,6 +4,7 @@ using DigitalWater.Core.Model;
 using DigitalWater.Core.Repositories;
 using DigitalWater.Data.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace DigitalWater.Api.Api.ExternalApi.v1;
@@ -57,7 +58,7 @@ public class SensorController : ControllerBase
     [SwaggerResponse(400, "Неверный запрос")]
     [SwaggerResponse(409, "Запись с таким id уже существует")]
     [SwaggerResponse(500, "Произошла ошибка при добавлении записей")]
-    public ActionResult<Sensor> AddSensor([FromBody] Sensor sensor)
+    public async Task<ActionResult<Sensor>> AddSensor([FromBody] Sensor sensor)
     {
         try
         {
@@ -66,6 +67,7 @@ public class SensorController : ControllerBase
                 return Conflict("Запись с таким id уже существует");
             
             _repository.Add(sensor);
+            await _repository.SaveChangesAsync();
             return Ok(sensor);
         }
         catch (Exception e)
@@ -83,11 +85,16 @@ public class SensorController : ControllerBase
     [SwaggerResponse(200, "Удалить информацию о датчике из базы данных")]
     [SwaggerResponse(400, "Неверный запрос")]
     [SwaggerResponse(500, "Произошла ошибка при удалении записей")]
-    public ActionResult<Sensor> DeleteSensor([FromRoute] string id)
+    public async Task<ActionResult<Sensor>> DeleteSensor([FromRoute] string id)
     {
         try
         {
-            _repository.Remove(id);
+            var found = _repository.Get(id);
+            if (found == null)
+                return Ok();
+            
+            _repository.Delete(found);
+            await _repository.SaveChangesAsync();
             return Ok();
         }
         catch (Exception e)
@@ -106,18 +113,27 @@ public class SensorController : ControllerBase
     [SwaggerResponse(200, "Обновить информацию о датчике в базе данных")]
     [SwaggerResponse(400, "Неверный запрос")]
     [SwaggerResponse(500, "Произошла ошибка при обновлении записей")]
-    public ActionResult<Sensor> UpdateSensor([FromRoute] string id, [FromBody] Sensor sensor)
+    public async Task<ActionResult<Sensor>> UpdateSensor([FromRoute] string id, [FromBody] Sensor sensor)
     {
         try
         {
-            var found = _repository.Get(id);
+            var found = _repository.GetListQuery().AsTracking().FirstOrDefault(p => p.Id == id);
             if (found == null)
                 return BadRequest("Датчик не найден");
             if (id != sensor.Id)
                 return BadRequest("Неверный id записи");
+            
+            // update found from sensor
+            found.Location = sensor.Location;
+            found.Type = sensor.Type;
+            found.Readings = sensor.Readings;
+            found.Status = sensor.Status;
+            found.Alerts = sensor.Alerts;
+            found.Metadata = sensor.Metadata;
 
-            _repository.Update(sensor);
-            return Ok(sensor);
+            _repository.Update(found);
+            await _repository.SaveChangesAsync();
+            return Ok(found);
         }
         catch (Exception e)
         {
